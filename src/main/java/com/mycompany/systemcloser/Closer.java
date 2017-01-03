@@ -35,12 +35,12 @@ public class Closer extends JPanel{
     public void closeButton(ActionListener listener)
     {
         button.addActionListener(listener);
-        button.setText("234");
+        
     }
    
     public void ActionPerformed (ActionEvent ae)
     {
-        System.out.println(date);
+    
     }
     public String showTime(){
        SimpleDateFormat sdate = new SimpleDateFormat("HH:mm:ss");

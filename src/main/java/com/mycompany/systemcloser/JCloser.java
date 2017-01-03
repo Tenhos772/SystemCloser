@@ -46,6 +46,9 @@ public class JCloser extends javax.swing.JFrame {
         countdownTime = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(400, 300, 0, 0));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximizedBounds(new java.awt.Rectangle(400, 300, 0, 0));
 
         cancelButton.setText("Cancel");
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
@@ -69,6 +72,9 @@ public class JCloser extends javax.swing.JFrame {
 
         jLabel1.setText("Current time");
 
+        timeBox.setEditable(false);
+        timeBox.setForeground(new java.awt.Color(255, 255, 255));
+        timeBox.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         timeBox.setEnabled(false);
         timeBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,7 +155,7 @@ public class JCloser extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cancelButton)
                     .addComponent(setButton))
-                .addContainerGap(173, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
 
         pack();
